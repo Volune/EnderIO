@@ -449,6 +449,7 @@ public final class Config {
   public static boolean enableMEConduits = true;
   public static boolean enableOCConduits = true;
   public static boolean enableOCConduitsAnimatedTexture = true;
+  public static boolean enableRSConduits = true;
 
   public static List<String> soulVesselBlackList = Collections.<String> emptyList();
   public static boolean soulVesselCapturesBosses = false;

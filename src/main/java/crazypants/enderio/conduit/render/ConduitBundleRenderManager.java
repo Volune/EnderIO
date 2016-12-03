@@ -17,6 +17,7 @@ import crazypants.enderio.conduit.power.PowerConduit;
 import crazypants.enderio.conduit.power.PowerConduitRenderer;
 import crazypants.enderio.conduit.redstone.InsulatedRedstoneConduit;
 import crazypants.enderio.conduit.redstone.InsulatedRedstoneConduitRenderer;
+import crazypants.enderio.conduit.rs.RSConduit;
 import crazypants.enderio.render.registry.TextureRegistry;
 import crazypants.enderio.render.registry.TextureRegistry.TextureSupplier;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
@@ -47,7 +48,8 @@ public class ConduitBundleRenderManager {
     ItemConduit.initIcons();
     OCConduit.initIcons();
     MEConduit.initIcons();
-            
+    RSConduit.initIcons();
+
     cbr.registerRenderer(new AdvancedLiquidConduitRenderer());
     cbr.registerRenderer(LiquidConduitRenderer.create());
     cbr.registerRenderer(new PowerConduitRenderer());

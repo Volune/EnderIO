@@ -10,6 +10,7 @@ import crazypants.enderio.conduit.me.IMEConduit;
 import crazypants.enderio.conduit.oc.IOCConduit;
 import crazypants.enderio.conduit.power.IPowerConduit;
 import crazypants.enderio.conduit.redstone.IRedstoneConduit;
+import crazypants.enderio.conduit.rs.IRSConduit;
 
 public class TabFactory {
 
@@ -36,6 +37,8 @@ public class TabFactory {
       return new MESettings(gui, con);
     } else if (baseType.isAssignableFrom(IOCConduit.class)) {
       return new OCSettings(gui, con);
+    } else if (baseType.isAssignableFrom(IRSConduit.class)) {
+      return new RSSettings(gui, con);
     }
     return null;
   }
